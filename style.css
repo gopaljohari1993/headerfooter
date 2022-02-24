@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+body{
+    min-height: 100vh;
+    background: url('../images/img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: #ffffff;
+    /*box-shadow: 0 5px 10px rgba(0,0,0,.1);*/
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 14px;
+    padding: 14px;
+    color: #333;
+    display: block;
+}
+/* navbar hover style create */
+/*header .navbar ul li a:hover{
+    background: #333;
+    color: #fff;
+}*/
+/* dropdown menu style css start */
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 991px){
+    header{
+        padding: 20px;
+    }
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+    header .navbar ul li{
+        width: 100%;
+
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li ul li{
+        background: #eee;
+    }
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+}
+
+/* footer style */
+footer.sitefooter {
+    background: #00fffe;
+    padding: 70px 0 0px;
+    color: #000;
+    margin-top: 60px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.containerfluid.containerf {
+    max-width: 1200px;
+    margin: auto;
+}
+.flogo {
+    padding-bottom: 32px;
+}
+li.nav-item {
+    position: relative;
+}
+.fnav a.nav-link {
+    color: #000;
+    font-size: 14px;
+    padding: 0;
+    margin-right: 25px;
+    margin-bottom: 19px;
+    font-family: 'gothambook';
+    text-transform: uppercase;
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.hourdetailrow {
+    display: flex;
+    margin: 5px 0;
+}
+.hourdetailleft {
+    min-width: 190px;
+}
+.fnav-address {
+    padding-top: 15px;
+    margin-bottom: 5px;
+}
+.signawaiver {
+    padding-top: 12px;
+}
+.fnav .row {
+    padding: 3px 12px;
+    align-items: center;
+}
+.fnav .row > div {
+    width: 50%;
+}
+.call {
+    font-family: 'barrio_chinoregular';
+    font-size: 28px;
+}
+ul.nav.fsocial, .fprivacy {
+    justify-content: flex-end;
+}
+.fsocial a.nav-link {
+    margin-right: 0;
+    padding: 6px;
+}
+.fab, .far {
+    font-weight: 400;
+}
+.disclaimer p {
+    font-size: 13px;
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.img-logo {
+    width: 119px;
+    border-radius: 4px;
+}
